@@ -1,0 +1,315 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #212121;
+  color:white;
+  background-image: url("./images/images/tools/dark-bg.webp")
+}
+
+.container{
+  width: 100%;
+  max-width: 1220px;
+  margin: 0px auto;
+  padding: 0 20px !important;
+
+}
+/* header{
+  position:fixed;
+} */
+ header{
+  position: sticky;
+  top:0px;
+   backdrop-filter: blur(10px);
+ }
+.header{
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+  /* background: red; */
+  
+  /* height:100vh; */
+  /* padding:20px */
+  /* position:fixed; */
+ 
+  /* filter: blur(10px); */
+
+ 
+  /* height:50px;
+  top:0px; */
+  padding:20px 0px
+  
+}
+.blurNavBar{
+  position:fixed;
+  
+}
+
+.navbar-brand-logo{
+  
+  font-family: 'Agustina', 'Rubik', sans-serif;
+  font-size:1.2rem;
+  text-decoration: none;
+  color:white;
+  padding-left:0px;
+
+
+}
+nav{
+  padding-top:20px;
+}
+nav a{
+  padding:20px;
+  color:white;
+  text-decoration: none;
+  position: relative;
+
+}
+nav a:hover::after{
+ content:"";
+ position:absolute;
+ width: 100%;
+ height:4px;
+ background-image:linear-gradient(to right,red, green);
+ bottom:0px;
+ left:0px;
+
+
+}
+.hero{
+  height:80vh;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content:space-between;
+  align-items: center;
+
+  
+}
+#hero_text{
+  color:lightskyblue;
+  padding:20px
+}
+#social_icons{
+  color:white;
+  text-decoration:none;
+  padding:15px;
+}
+#hero_image img{
+  width:auto;
+  height:560px;
+  margin-top:150px;
+  position:relative;
+}
+
+#fed{
+  border-radius:50px;
+  width:10rem;
+  background-color:transparent;
+  color:white;
+  border:1px solid purple;
+  padding:10px
+
+}
+.text:hover:active::after{
+ content:"";
+ position:absolute;
+ width: 100%;
+ height:4px;
+ background-image:linear-gradient(to right,red, green);
+ bottom:0px;
+ left:0px;
+
+
+}
+#buttons{
+  padding:10px;
+  color:white;
+  gap:15px;
+}
+#buttons button{
+  padding:10px;
+  border-radius:10px;
+  font-weight: bold;
+  color:white;
+  height:3rem;
+}
+
+.about-img{
+  position:relative;
+  margin-top:0;
+  box-shadow: 12px 12px 0px purple;
+  border-radius:20px;
+  
+}
+
+
+#interests, #aboutMe, #tools, #projects, #skills, #tools, #contact, #blogs, #testimonials{
+  background-image:url("./images/images/grid.png");
+  padding:100px;
+  margin:50px;
+}
+
+#interest{
+  display:flex;
+  padding:5px;
+
+
+}
+.card{
+  border:2px solid purple;
+  padding:25px;
+  margin: 15px;
+  border-radius:40px;
+  height:300px;
+  width:850px; 
+}
+
+
+#about{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.skill-cards{
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+  align-items:center;
+  margin:15px;
+  justify-content:center
+
+}
+.skill-cards2{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items:center;
+  margin:15px;
+  justify-content:center
+}
+.skill-card{
+  border:1px solid purple;
+padding:20px;
+border-radius:25px;
+margin:15px;
+
+}
+.skill-card img{
+  height:40px
+}
+
+
+#tools-cards{
+  display:flex;
+  justify-content:space-between;
+
+
+}
+.tool-card{
+
+  padding:20px;
+  border-radius:25px;
+  margin:15px;
+  border:2px solid purple;
+  width:200px;
+}
+
+
+
+
+.tool-card img{
+  height:40px;
+  margin-top:0
+}
+
+#project-grid{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:25px
+}
+.project-card{
+  border:2px solid purple;
+  overflow:hidden;
+  border-radius:40px;
+  padding:20px;
+}
+.project-text{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding:10px
+}
+.project-img img{
+  width: 100%;
+  height: auto;
+  
+}
+.project-text img{
+  height:25px;
+  margin-top: 0;
+}
+.visitbtn{
+  padding:5px;
+  border-radius:20px;
+  background-color:purple;
+  color:white;
+  width:60px;
+
+}
+
+
+#testimonials-cards{
+  display:flex;
+
+
+}
+.testimonial-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border:2px solid purple;
+  padding:20px;
+  margin:25px
+}
+.testimonial-img img{
+  height:80px;
+}
+.testimonial-img{
+  border-radius:80px;
+  overflow:hidden
+}
+
+
+.blogs-text{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:start;
+  text-align:left;
+  
+}
+.blogs-text p h3 {
+  padding:10px;
+}
+#contactformouter{
+  margin:50px;
+  padding:50px;
+  border: 2px solid gray;
+  border-radius:25px;
+  width:750px
+}
+#contactform form>input{
+    height:20px;
+
+
+}
+#contactform form{
+  padding:50px;
+  width:70px
+}
