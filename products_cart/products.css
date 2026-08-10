@@ -101,7 +101,7 @@ header h1 {
 /* ================= PRODUCT IMAGE ================= */
 
 .product_card img {
-    width: 100%;
+    width: 70%;
     height: 230px;
 
     object-fit: contain;

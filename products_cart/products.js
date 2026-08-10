@@ -67,12 +67,14 @@ function displayProducts(products) {
             <h3>
                 ${product.title}
             </h3>
-
+            <span style="font-size:15px;color:grey;text-align:justify">
+                ${product.description.split(" ").slice(0, 15).join(" ")}...
+            </span>
             <p>
                 $${product.price}
             </p>
-            <span style="font-size:15px;color:grey">Rating:${ratingStars(product.rating)}</span>
-            <button class="addToCart">
+            <span style="font-size:15px;color:grey;">Rating:${ratingStars(product.rating)}</span><br>
+            <button class="addToCart" style="margin-top:15px">
                 Add to Cart
             </button>
 
