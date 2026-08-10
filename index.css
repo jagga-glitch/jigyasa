@@ -183,26 +183,34 @@ nav a:hover::after{
   grid-template-columns: repeat(6,1fr);
   align-items:center;
   margin:15px;
-  justify-content:center
+  justify-content:center;
+  gap:30px;
 
 }
-.skill-cards2{
-  display:grid;
-  grid-template-columns: repeat(4,1fr);
-  align-items:center;
-  margin:15px;
-  justify-content:center
+.skill-card.nthchild(7){
+  grid-column:3;
+}
+.skill-card.nthchild(8){
+  grid-column:4;
+}
+.skill-card.nthchild(9){
+  grid-column:5;
+}
+.skill-card.nthchild(10){
+  grid-column:6s;
 }
 .skill-card{
   border:1px solid purple;
 padding:20px;
 border-radius:25px;
-margin:15px;
+margin:15px6
 
 }
+
 .skill-card img{
   height:40px
 }
+
 
 
 #tools-cards{
