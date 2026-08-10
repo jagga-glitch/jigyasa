@@ -1,6 +1,4 @@
-body{
 
-}
 .table{
   text-align:center;
   border:5px solid purple;
@@ -8,7 +6,7 @@ body{
   border-collapse: collapse;
 }
 thead {
-  background-color:gray;
+  background-image:linear-gradient(to right, purple, white);
   color:black;
   text-align:center;
   
